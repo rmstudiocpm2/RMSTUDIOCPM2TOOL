@@ -131,10 +131,10 @@ def load_player_data(cpm, access_key=None):
                 table.add_column("Field", style="bold green", justify="right")
                 table.add_column("Value", style="bold white", justify="left")
 
-                table.add_row(" 👤 名字", str(name))
-                table.add_row("🆔 ID", str(local_id))
-                table.add_row(" 💸 綠鈔", f"{money:,}")
-                table.add_row("🪙 C幣", f"{coins:,}")
+                table.add_row("👤 名字", str(name))
+                table.add_row("🆔 I D", str(local_id))
+                table.add_row("💸 綠鈔", f"{money:,}")
+                table.add_row("🪙 C 幣", f"{coins:,}")
                 if access_key:
                     table.add_row("🔐 密鑰", access_key)
 
@@ -670,5 +670,6 @@ if __name__ == "__main__":
             break
 
         break
+
 
 
