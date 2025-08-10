@@ -79,8 +79,8 @@ def banner(console):
     info = Panel.fit(
         "[bold magenta]🧠 Tool:[/bold magenta] [white]Car Parking Multiplayer 2 VIP 工具[/white]\n"
         "[bold magenta]📢 Telegram:[/bold magenta] [bold cyan]@ryderchang666[/bold cyan]  |  [bold cyan]@RMSTUDIO MAIN[/bold cyan]\n"
-        "[bold magenta]⚠ 記得:[/bold magenta] [yellow]使用此工具前請先把帳號儲存登出[/yellow]",
-        title="[bold blue]🚀 RMSTUDIO VIP Termux[/bold blue]",
+        "[bold magenta]⚠ 注意:[/bold magenta] [yellow]使用此工具前請先把帳號儲存登出[/yellow]",
+        title="[bold blue]🚀 RMSTUDIO VIP Termux Tool[/bold blue]",
         border_style="bright_magenta",
         padding=(1, 3),
     )
@@ -104,7 +104,7 @@ signal.signal(signal.SIGINT, signal_handler)
 def save_player_profile(data):
     with open("player_profile.json", "w") as f:
         json.dump(data, f, indent=4)
-    console.print("[green]📁 Profile saved as [bold]player_profile.json[/bold][/green]")
+    console.print("[green]📁 Profile saved as [bold]資料庫[/bold][/green]")
 
 # Load and display player data
 def load_player_data(cpm, access_key=None):
@@ -131,9 +131,9 @@ def load_player_data(cpm, access_key=None):
                 table.add_column("Field", style="bold green", justify="right")
                 table.add_column("Value", style="bold white", justify="left")
 
-                table.add_row("👤 名字", str(name))
+                table.add_row(" 👤 名字", str(name))
                 table.add_row("🆔 ID", str(local_id))
-                table.add_row("💸 綠鈔", f"{money:,}")
+                table.add_row(" 💸 綠鈔", f"{money:,}")
                 table.add_row("🪙 C幣", f"{coins:,}")
                 if access_key:
                     table.add_row("🔐 密鑰", access_key)
@@ -670,4 +670,5 @@ if __name__ == "__main__":
             break
 
         break
+
 
