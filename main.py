@@ -246,7 +246,7 @@ def rainbow_gradient_string(customer_name):
 
 # Cool animated banner splash
 def animated_intro(console):
-    title = "[bold cyan]🚀 RM Tool[/bold cyan]"
+    title = "[bold cyan]🚀 RMSTUDIO Tool[/bold cyan]"
     subtitles = [
         "🔒 Secure. ⚙️ Powerful. 🎮 Game-On!",
         "👑 Powered by RMSTUDIO Ryder Chang",
@@ -325,10 +325,10 @@ if __name__ == "__main__":
                 "解鎖所有車輛警燈 - 7000",
                 "解鎖20個車位 - 7000",  # 17
                 "解鎖所有車輛的氣壓懸吊 - 6000",  # 18
-                "解鎖所有旗子 - 9000",
-                "解鎖所有警燈套件 - 20000",
-                "每日任務 300C幣 24小時 重置 - 10000",         
-                "測試",
+                "解鎖所有旗子 請勿使用 - 9000",
+                "解鎖所有警燈套件 請勿使用 - 20000",
+                "每日任務 300C幣 24小時 重置 請勿使用 - 10000",         
+                "測試 請勿使用",
 ]
 
             choices = [str(i) for i in range(len(menu_items))]
@@ -670,6 +670,7 @@ if __name__ == "__main__":
             break
 
         break
+
 
 
 
