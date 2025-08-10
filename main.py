@@ -65,7 +65,7 @@ def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
 
     # Main VIP Gradient Header
-    title_text = fig.renderText("CPM2 Tool RMSTUDIO [2]")
+    title_text = fig.renderText("RM Tool RMSTUDIO [2]")
     gradient_colors = ["#FF0000", "#FF8000", "#FFFF00", "#00FF80", "#00FFFF", "#0055FF", "#8000FF"]
     
     with Live(console=console, refresh_per_second=6, transient=True) as live:
@@ -132,7 +132,7 @@ def load_player_data(cpm, access_key=None):
                 table.add_column("Value", style="bold white", justify="left")
 
                 table.add_row("👤 名字", str(name))
-                table.add_row("🆔 I D", str(local_id))
+                table.add_row("🆔I D", str(local_id))
                 table.add_row("💸 綠鈔", f"{money:,}")
                 table.add_row("🪙 C 幣", f"{coins:,}")
                 if access_key:
@@ -670,6 +670,7 @@ if __name__ == "__main__":
             break
 
         break
+
 
 
 
