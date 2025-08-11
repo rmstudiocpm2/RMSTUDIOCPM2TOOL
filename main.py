@@ -65,7 +65,7 @@ def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
 
     # Main VIP Gradient Header
-    title_text = fig.renderText("RM Tool RMSTUDIO [2]")
+    title_text = fig.renderText("RM Tool  [2]")
     gradient_colors = ["#FF0000", "#FF8000", "#FFFF00", "#00FF80", "#00FFFF", "#0055FF", "#8000FF"]
     
     with Live(console=console, refresh_per_second=6, transient=True) as live:
@@ -127,7 +127,7 @@ def load_player_data(cpm, access_key=None):
                 for _ in track(range(20), description="Loading Money & Coins..."):
                     time.sleep(0.02)
 
-                table = Table(title="🚗 [bold yellow]Player Profile[/bold yellow]", box=box.SQUARE, border_style="bright_blue")
+                table = Table(title="🚗 [bold yellow]玩家帳號 詳細資料[/bold yellow]", box=box.SQUARE, border_style="bright_blue")
                 table.add_column("Field", style="bold green", justify="right")
                 table.add_column("Value", style="bold white", justify="left")
 
@@ -249,8 +249,8 @@ def animated_intro(console):
     title = "[bold cyan]🚀 RMSTUDIO Tool[/bold cyan]"
     subtitles = [
         "🔒 Secure. ⚙️ Powerful. 🎮 Game-On!",
-        "👑 Powered by RMSTUDIO Ryder Chang",
-        f"📡 Connecting to servers..."
+        "👑 Powered by ⚡️RMSTUDIO⚡️ Ryder Chang 🇹🇼",
+        f"📡 正在連接到伺服器..."
     ]
     with Live(console=console, refresh_per_second=10) as live:
         for subtitle in subtitles:
@@ -273,11 +273,11 @@ if __name__ == "__main__":
         animated_intro(console)
         banner(console)
 
-        acc_email = prompt_valid_value("[bold][?] Account Email[/bold]", "Email", password=False)
-        acc_password = prompt_valid_value("[bold][?] Account Password[/bold]", "Password", password=False)
-        acc_access_key = prompt_valid_value("[bold][?] Access Key[/bold]", "Access Key", password=False)
+        acc_email = prompt_valid_value("[bold][?] 輸入帳號 Email[/bold]", "Email", password=False)
+        acc_password = prompt_valid_value("[bold][?] 輸入帳號 密碼[/bold]", "Password", password=False)
+        acc_access_key = prompt_valid_value("[bold][?] 密鑰[/bold]", "Access Key", password=False)
 
-        loading_spinner(console, "🔐 Attempting Login")
+        loading_spinner(console, "🔐 嘗試登入中...")
         cpm = rmstudiocpm2(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)
 
@@ -325,9 +325,9 @@ if __name__ == "__main__":
                 "解鎖所有車輛警燈 - 7000",
                 "解鎖20個車位 - 7000",  # 17
                 "解鎖所有車輛的氣壓懸吊 - 6000",  # 18
-                "解鎖所有旗子 請勿使用 - 9000",
-                "解鎖所有警燈套件 請勿使用 - 20000",
-                "每日任務 300C幣 24小時 重置 請勿使用 - 10000",         
+                "解鎖所有旗子  - 9000",
+                "解鎖所有警燈套件 - 20000",
+                "每日任務 300C幣 24小時 重置 - 10000",         
                 "測試 請勿使用",
 ]
 
@@ -670,6 +670,7 @@ if __name__ == "__main__":
             break
 
         break
+
 
 
 
