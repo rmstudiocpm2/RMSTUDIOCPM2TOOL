@@ -65,7 +65,7 @@ def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
 
     # Main VIP Gradient Header
-    title_text = fig.renderText("RM Tool[2]")
+    title_text = fig.renderText("RM Tool")
     gradient_colors = ["#FF0000", "#FF8000", "#FFFF00", "#00FF80", "#00FFFF", "#0055FF", "#8000FF"]
     
     with Live(console=console, refresh_per_second=6, transient=True) as live:
@@ -670,6 +670,7 @@ if __name__ == "__main__":
             break
 
         break
+
 
 
 
